@@ -1,0 +1,13 @@
+set bg=dark
+colors seoul256
+set noswf
+set nobk
+set ts=2
+set sw=2
+set et
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+set ff=unix
+set nobomb

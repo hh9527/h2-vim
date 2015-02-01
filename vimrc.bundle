@@ -1,0 +1,8 @@
+Plugin "Shougo/vimpoc.vim"
+Plugin "Shougo/unite.vim"
+Plugin "Shougo/neocomplcache.vim"
+Plugin "Shougo/neosnippet.vim"
+Plugin "Shougo/neosnippet-snippnets.vim"
+Plugin "Shougo/unite-outline"
+Plugin "tpope/vim-fugitive"
+Plugin "junegunn/seoul256.vim"
