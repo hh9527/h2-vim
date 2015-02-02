@@ -1,13 +1,32 @@
 set bg=dark
-colors seoul256
 set noswf
 set nobk
 set ts=2
 set sw=2
 set et
+set nowrap
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
 set ff=unix
 set nobomb
+set foldlevel=2
+set laststatus=2
+set noerrorbells
+set cino=:0g0j1J1
+set conceallevel=2 concealcursor=i
+
+if finddir('color/seoul256.vim', &rtp)
+  colors seoul256
+endif
+
+inoremap <C-J> <C-N>
+inoremap <C-K> <C-P>
+noremap k gk
+noremap j gj
+noremap H ^
+noremap L $
+
+let g:fav_unite_sources = []
+

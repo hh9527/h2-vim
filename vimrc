@@ -6,14 +6,24 @@ function! TrySource(fn)
   return 0
 endfunction
 
-set nocp
+if has("win32")
+  if $PATH !~? '\(^\|;\)' . escape($VIM, '\\') . '\(;\|$\)'
+    $PATH = $VIM . ';' . $PATH
+  endif
+endif
+
+if has('vim_starting')
+  set nocp
+  set rtp+=~/.vim/bundle/Vundle.vim
+endif
+
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-vundle#begin("~/.vim/bundle/")
+vundle#begin(expand("~/.vim/bundle/"))
 Plugin "gmarik/Vundle.vim"
 call TrySource("~/.vim/bundle/h2-vim/vimrc.bundle")
+call TrySource("~/.vim.bundle")
 vundle#end()
-filetype syntax indent on
+filetype plugin indent on
 
 if !TrySource("~/.vimrc.default")
   call TrySource("~/.vim/bundle/h2-vim/vimrc.default")
