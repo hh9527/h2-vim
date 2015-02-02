@@ -8,7 +8,11 @@ if exists('g:loaded_unite')
     imap <buffer> <ESC> <Plug>(unite_exit)
   endfunction
   au FileType unite call s:usetting()
-  nnoremap <C-P> :<C-U>UniteWithProjectDir buffer file_rec/async:!<CR>
+  if has('win32')
+    nnoremap <C-P> :<C-U>Unite buffer file_rec<CR>
+  else
+    nnoremap <C-P> :<C-U>Unite buffer file_rec/async<CR>
+  endif
   nnoremap <C-J><C-H> :<C-U>Unite outline<CR>
   nnoremap <C-J><C-K> :<C-U>Unite tag tag/include<CR>
   nnoremap <C-K><C-K> :<C-U>UniteWithCursorWord tag tag/include<CR>
