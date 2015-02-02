@@ -18,6 +18,7 @@ set laststatus=2
 set noerrorbells
 set cino=:0g0j1J1
 set conceallevel=2 concealcursor=i
+syntax on
 
 if !has('gui-running')
   set t_Co=256
