@@ -17,7 +17,12 @@ set noerrorbells
 set cino=:0g0j1J1
 set conceallevel=2 concealcursor=i
 
-if findfile('colors/seoul256.vim', &rtp)
+if !has('gui-running')
+  set t_Co=256
+endif
+
+if findfile('colors/seoul256.vim', &rtp) != ''
+  let g:seoul256_background = 234
   colors seoul256
 endif
 

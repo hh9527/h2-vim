@@ -14,6 +14,7 @@ call vundle#begin(expand('~/.vim/bundle/'))
 Plugin 'gmarik/Vundle.vim'
 call TrySource('~/.vim/bundle/h2-vim/vimrc.bundle')
 call TrySource('~/.vim.bundle')
+Plugin 'hh9527/h2-vim'
 call vundle#end()
 filetype plugin indent on
 
