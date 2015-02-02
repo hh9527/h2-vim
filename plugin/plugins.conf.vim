@@ -1,6 +1,5 @@
 if exists('g:loaded_unite')
   call unite#custom#profile('default', 'context', {'start_insert': 1, 'direction': 'botright', 'prompt_direction': 'top'})
-  call unite#custom#source('file_rec/async', 'ignore_globs', ['.*', 'node_modules'])
   call unite#filters#matcher_default#use(['matcher_fuzzy'])
   call unite#filters#sorter_default#use(['sorter_rank'])
   function! s:usetting()
@@ -9,7 +8,7 @@ if exists('g:loaded_unite')
     imap <buffer> <ESC> <Plug>(unite_exit)
   endfunction
   au FileType unite call s:usetting()
-  nnoremap <C-P> :<C-U>Unite buffer file_rec/async<CR>
+  nnoremap <C-P> :<C-U>UniteWithProjectDir buffer file_rec/async:!<CR>
   nnoremap <C-J><C-H> :<C-U>Unite outline<CR>
   nnoremap <C-J><C-K> :<C-U>Unite tag tag/include<CR>
   nnoremap <C-K><C-K> :<C-U>UniteWithCursorWord tag tag/include<CR>
