@@ -28,3 +28,4 @@ if !TrySource('~/.vimrc.default')
   call TrySource('~/.vim/bundle/h2-vim/vimrc.default')
 endif
 call TrySource('~/.vimrc.local')
+
