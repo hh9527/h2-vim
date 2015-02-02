@@ -17,7 +17,7 @@ set noerrorbells
 set cino=:0g0j1J1
 set conceallevel=2 concealcursor=i
 
-if finddir('color/seoul256.vim', &rtp)
+if findfile('colors/seoul256.vim', &rtp)
   colors seoul256
 endif
 
@@ -29,4 +29,5 @@ noremap H ^
 noremap L $
 
 let g:fav_unite_sources = []
+
 
