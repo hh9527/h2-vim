@@ -20,7 +20,7 @@ filetype plugin indent on
 
 if has('win32')
   if $PATH !~? '\(^\|;\)' . escape($VIM, '\\') . '\(;\|$\)'
-    $PATH = $VIM . ';' . $PATH
+    let $PATH = $VIM . ';' . $PATH
   endif
 endif
 
