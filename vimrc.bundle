@@ -7,6 +7,7 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'Shougo/unite-outline'
 Plugin 'tsukkee/unite-tag'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-commentary'
 Plugin 'itchyny/lightline.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'terryma/vim-expand-region'
@@ -20,5 +21,7 @@ Plugin 'kelan/gyp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'cespare/vim-toml'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'gabrielelana/vim-markdown'
+
+
 
