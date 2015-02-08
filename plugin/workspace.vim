@@ -37,7 +37,6 @@ if !exists('g:loaded_workspace')
           let b:workspace_conf.ftime = ftime
           let b:workspace_conf.cmds = cmds
           let $TOP = saved_top
-          echo 'Config file "' . fpath . '" loaded.'
         else
           echo 'Config file "' . fpath . '" load failed.'
         endif
