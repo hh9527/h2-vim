@@ -12,7 +12,7 @@ if exists('g:loaded_unite')
     let g:unite_source_grep_command = 'ag'
     let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
     let g:unite_source_grep_recursive_opt = ''
-    let g:unite_source_rec_async_command = 'ag --follow --nocolor --nogroup --hidden -g""'
+    let g:unite_source_rec_async_command = 'ag --follow --nocolor --nogroup --hidden -g ""'
   endif
   if has('win32') && !executable('ag')
     nnoremap <C-P> :<C-U>Unite buffer file_rec<CR>
