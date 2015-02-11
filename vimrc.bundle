@@ -9,7 +9,6 @@ Plugin 'tsukkee/unite-tag'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'itchyny/lightline.vim'
-Plugin 'Yggdroot/indentLine'
 Plugin 'terryma/vim-expand-region'
 Plugin 'Chiel92/vim-autoformat'
 
