@@ -17,7 +17,7 @@ set foldlevel=2
 set laststatus=2
 set noerrorbells
 set cino=:0g0j1J1
-set conceallevel=2 concealcursor=i
+" set conceallevel=2 concealcursor=i
 set nofen
 set nospell
 syntax on
