@@ -40,7 +40,5 @@ noremap L $
 nnoremap [q :<C-U>cprev<CR>
 nnoremap ]q :<C-U>cnext<CR>
 
-set tags=.git/tags;
-
 let g:fav_unite_sources = []
 
