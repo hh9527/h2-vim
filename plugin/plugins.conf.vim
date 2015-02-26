@@ -26,9 +26,6 @@ if exists('g:loaded_unite')
 endif
 
 if exists('g:loaded_neocomplcache')
-  let g:neocomplcache_enable_at_startup = 1
-  let g:neocomplcache_enable_smart_case = 1
-  let g:neocomplcache_min_syntax_length = 3
   imap <expr><ESC> neocomplcache#smart_close_popup() . "\<ESC>"
   imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : (pumvisible() ? "\<C-N>" : "\<TAB>")
 endif
