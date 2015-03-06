@@ -48,5 +48,6 @@ let g:fav_unite_sources = []
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_min_syntax_length = 3
+let g:markdown_enable_spell_checking = 0
 
 
