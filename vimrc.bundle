@@ -21,6 +21,6 @@ Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'gabrielelana/vim-markdown'
-Plugin 'zah/nimrod.vim'
+" Plugin 'zah/nimrod.vim'
 
 

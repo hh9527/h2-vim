@@ -40,6 +40,8 @@ noremap H ^
 noremap L $
 nnoremap [q :<C-U>cprev<CR>
 nnoremap ]q :<C-U>cnext<CR>
+noremap <Leader>= :set invcuc<CR>
+inoremap <C-\>= <C-O>:set invcuc<CR>
 
 let g:fav_unite_sources = []
 
