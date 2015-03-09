@@ -19,7 +19,7 @@ set noerrorbells
 set cino=:0g0j1J1
 set nofen
 set nospell
-set cursorline
+set nocul nocuc
 syntax on
 
 if !has('gui-running')
@@ -39,8 +39,8 @@ noremap H ^
 noremap L $
 nnoremap [q :<C-U>cprev<CR>
 nnoremap ]q :<C-U>cnext<CR>
-noremap <Leader>= :set invcuc<CR>
-inoremap <C-\>= <C-O>:set invcuc<CR>
+noremap <Leader>= :set invcul invcuc<CR>
+inoremap <C-\>= <C-O>:set invcul invcuc<CR>
 
 let g:fav_unite_sources = []
 
