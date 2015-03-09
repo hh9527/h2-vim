@@ -20,7 +20,6 @@ set cino=:0g0j1J1
 set nofen
 set nospell
 set cursorline
-set cursorcolumn
 syntax on
 
 if !has('gui-running')
