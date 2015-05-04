@@ -28,6 +28,9 @@ if !exists('g:loaded_workspace')
           if has_key(conf, 'compiler')
             call add(cmds, 'compiler! ' . conf.compiler)
           endif
+          if has_key(conf, 'makeprg')
+            call add(cmds, 'set makeprg=' . escape(conf.makeprg, ' \'))
+          endif
           if has_key(conf, 'working_dir')
             call add(cmds, 'cd! ' . fnameescape(fnamemodify(expand(conf.working_dir), ':p:h')))
           else
